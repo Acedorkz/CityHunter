@@ -1,0 +1,47 @@
+#video_info{
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 9px;
+}
+#dynamic_charts{
+  margin-top: 15px;
+  width:825px;
+}
+#sidebar-menu{
+  font-size: 17px;
+}
+#my-video1{
+	margin-right: 45px;
+	display: inline-block;
+	float: left;
+}
+#my-video2{
+	display: inline-block;
+}
+.chart1{
+	display: inline-block;
+}
+#charts-1{
+	display: inline-block;
+}
+#charts-1 img{
+	vertical-align: unset;
+}
+#charts-2{
+	display: inline-block;
+}
+
+
+/*modal*/
+#modal_window{
+  width: 1050px;
+  margin-left: 250px;
+}
+#modal_img1{
+	display: inline-block;
+	float: left;
+}
+#modal_img2{
+	display: inline-block;
+	margin-left: 20px;
+}

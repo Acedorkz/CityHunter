@@ -1,0 +1,27 @@
+#modal_img1{
+	display: inline-block;
+	float: left;
+}
+#modal_img2{
+	display: inline-block;
+	float: right;
+}
+#chart3{
+	width: 1030px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+}
+#chart3 img{
+	width: 510px;
+}
+.chart-info-left{
+	display: inline-block;
+	float: left;
+	width: 510px;
+}
+.chart-info-right{
+	display: inline-block;
+	float: right;
+	width: 510px;
+}
