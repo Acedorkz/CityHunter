@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title>CityHunter </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,25 +36,14 @@
 
             <div class="clearfix"></div>
 
-            <!-- menu profile quick info -->
-            <div class="profile">
-              <div class="profile_pic">
-                <img src="images/img.gif" alt="..." class="img-circle profile_img">
-              </div>
-              <div class="profile_info">
-                <h2>Ace</h2>
-              </div>
-            </div>
-            <!-- /menu profile quick info -->
-
             <br />
 
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i></a>
+                  <li>
 
                       <li><a href="index.html">人流异常预警</a></li>
                       <li><a href="index2.html">商业布局指导</a></li>
@@ -72,21 +61,7 @@
           </div>
         </div>
 
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav class="" role="navigation">
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
 
-              <ul class="nav navbar-nav navbar-right">
-
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <!-- /top navigation -->
 
         <!-- page content -->
         <div class="right_col" role="main">
@@ -96,38 +71,45 @@
 
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="dashboard_graph" style="height:390px;">
+              <div class="dashboard_graph" style="height:780px;">
 
-                <div class="row x_title">
+                <!-- <div class="row x_title">
                   <div class="col-md-6">
                     <h3>视频 <small>video</small></h3>
                   </div>
-                </div>
+                </div> -->
 
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <div style="width: 100%;">
-                    <video id="my-video1" class="video-js" controls preload="auto" height="320px" width="500px" data-setup="{}">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                  <div>
+                    <video id="my-video1" class="video-js" controls preload="auto" height="300px" width="430px" data-setup="{}">
                       <source src="video/front.mp4" type='video/mp4'>
                       <p class="vjs-no-js">
                         To view this video please enable JavaScript, and consider upgrading to a web browser that
                         <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
                       </p>
                     </video>
+                    <div class="chart1">
+                      <div id="charts-1" style="height:350px; width:400px;" >
+                          <img src="images/model_value.png" alt="">
+                      </div>
+
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                  <div class="col-md-12 col-sm-12 col-xs-6">
+                <div class="col-md-12 col-sm-6 col-xs-12">
                     <div>
-                      <video id="my-video2" class="video-js" controls preload="auto" height="320px" width="500px" data-setup="{}">
-                        <source src="video/front.mp4" type='video/mp4'>
+                      <video id="my-video2" class="video-js" controls preload="auto" height="300px" width="430px" data-setup="{}">
+                        <source src="video/back.mp4" type='video/mp4'>
                         <p class="vjs-no-js">
                           To view this video please enable JavaScript, and consider upgrading to a web browser that
                           <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
                         </p>
                       </video>
+                      <div id="charts-2" style="height:350px; width:400px;" >
+                        <img src="images/model_speed.png" alt="">
+                      </div>
                     </div>
                 </div>
-              </div>
 
             </div>
 
@@ -138,7 +120,7 @@
 
 
           <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-12" id="video_info">
+            <div class="col-md-11 col-sm-6 col-xs-12" id="video_info">
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Video_info</h2>
@@ -151,40 +133,15 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <h4>
+                  <p>
                     时间：2017/5/10<br>
                     地点：电子科技大学沙河校区第二教学楼一二层楼梯处<br>
                     阈值设置（人数）：6人
-                  </h4>
+                  </p>
                 </div>
               </div>
             </div>
 
-
-            <div class="col-md-8 col-sm-8 col-xs-12" id="dynamic_charts">
-              <div class="row">
-
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="x_panel">
-                    <div class="x_title">
-                      <h2>Charts</h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                      <div class="dashboard-widget-content">
-                        <!-- chart -->
-                        <div class="chart1">
-                          <div id="charts-1" style="height:400px; width:360px;" >
-                              <img src="images/model.png" alt="">
-                          </div>
-                          <div id="charts-2" style="height:400px; width:360px;" ></div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -221,7 +178,7 @@
                   <br></br>
                   <h4>时间：2017/5/6</h4>
                   <h4>地点：电子科技大学第二教学楼</h4>
-                  <h4>事故指导：...</h4>
+                  <h4>事故指导：</h4>
                 </div>
 
               </div>
@@ -237,14 +194,6 @@
 
         <!-- /page content -->
 
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            基于安防视频的人流异常预警 -- Website designed by CityHunter
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
       </div>
     </div>
 

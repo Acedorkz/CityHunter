@@ -1,3 +1,6 @@
+#sidebar-menu{
+  font-size: 17px;
+}
 #modal_img1{
 	display: inline-block;
 	float: left;
@@ -9,19 +12,40 @@
 #chart3{
 	width: 1030px;
 	margin: 0 auto;
-	margin-top: 40px;
 	text-align: center;
 }
-#chart3 img{
-	width: 510px;
+.chart-info1{
+	margin: 0 auto;
+	width: 750px;
 }
-.chart-info-left{
-	display: inline-block;
-	float: left;
-	width: 510px;
+.chart_info2{
+  margin: 0 auto;
+	width: 1100px;
 }
-.chart-info-right{
-	display: inline-block;
-	float: right;
-	width: 510px;
+#figure img{
+	width: 750px;
+}
+#img_instruct{
+  width: 1080px;
+  display: inline-block;
+}
+#instruct1{
+  height: 280px;
+  display: inline-block;
+  float: left;
+  margin-top: 80px;
+}
+
+#model{
+
+  width: 680px;
+  display: inline-block;
+
+}
+#model img{
+  height: 450px;
+}
+#echart_model{
+  display: inline-block;
+  float: right;
 }

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title>CityHunter</title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     <link href="../build/css/custom.min.css" rel="stylesheet">
 
     <link href="css/index2.css" rel="stylesheet">
+
   </head>
 
   <body class="nav-md">
@@ -28,31 +29,20 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>CityHunter</span></a>
             </div>
 
             <div class="clearfix"></div>
 
-            <!-- menu profile quick info -->
-            <div class="profile">
-              <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-              </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
-              </div>
-            </div>
-            <!-- /menu profile quick info -->
 
             <br />
 
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i></a>
+                  <li>
 
                       <li><a href="index.html">人流异常预警</a></li>
                       <li><a href="index2.html">商业布局指导</a></li>
@@ -60,29 +50,11 @@
                   </li>
                 </ul>
               </div>
-
-
             </div>
             <!-- /sidebar menu -->
 
           </div>
         </div>
-
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav class="" role="navigation">
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
-
-              <ul class="nav navbar-nav navbar-right">
-
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <!-- /top navigation -->
 
         <!-- page content -->
         <div class="right_col" role="main">
@@ -91,28 +63,21 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Prophet</h2>
-                    <div class="clearfix"></div>
-                  </div>
+
                   <div class="x_content">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                       <div id="chart3" >
-                        <div class="chart-info-left">
-                          <img src="images/pro.png" alt="pro">
-                          <h4>春熙路</h4>
+                        <div class="chart-info1" id="figure">
+                          <img src="images/figure_1.png" alt="pro">
+                          <h4>春熙路--基于历史数据预测</h4>
                         </div>
-                        <div class="chart-info-right">
-                          <img src="images/pro.png" alt="pro">
-                          <h4>天府广场</h4>
-                        </div>
-                        <div class="chart-info-left">
-                          <img src="images/pro.png" alt="pro">
-                          <h4>人民公园</h4>
-                        </div>
-                        <div class="chart-info-right">
-                          <img src="images/pro.png" alt="pro">
-                          <h4>龙湖时代天街</h4>
+                        <div class="chart-info2" id="img_instruct">
+                          <img id="instruct1" src="images/instruct.png" alt="pro">
+                          <div id="model">
+                            <img  src="images/echart_model.png" alt="pro">
+                          </div>
+
+                          <h4>临近三角地区一周之内人数</h4>
                         </div>
 
                       </div>
@@ -142,7 +107,7 @@
                   <div class="x_content">
             				<h2>
             					针对周内的人流量建议：<br><br>
-            					针对周末的人流量建议：
+            					针对周末的人流量建议：商家可选择周末进行一些促销活动来提高销量
             				</h2>
                   </div>
                   </div>
@@ -191,6 +156,9 @@
     <!-- bootstrap-daterangepicker -->
     <script src="js/moment/moment.min.js"></script>
     <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
